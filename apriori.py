@@ -1,7 +1,7 @@
 import csv
 from itertools import combinations
 
-def read_data(file_loc='/home/gridlex/Downloads/GroceryStoreDataSet.csv'):
+def read_data(file_loc='GroceryStoreDataSet.csv'):
     trans = dict()
     with open(file_loc) as f:
         filedata = csv.reader(f, delimiter=',')
