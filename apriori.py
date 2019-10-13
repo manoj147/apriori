@@ -124,7 +124,7 @@ def main(min_support, min_confidence, file_loc):
     
     
 
-main(0.01, 0.7, '/home/gridlex/Downloads/GroceryStoreDataSet.csv')
+main(0.01, 0.7, 'GroceryStoreDataSet.csv')
 
 
 
