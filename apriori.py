@@ -74,11 +74,7 @@ def confidence(associations, d, min_confidence):
                 if type(k) != type(str()):
                     if left.union(right) - set(k) == set():
                         up = d[k]
-                    if len(right) >= len(set(k)):
-                        if right - set(k) == set():
-                            down = d[k]
-                    elif len(right) <= len(set(k)):
-                        if set(k) - right == set():
+                    if len(right) == len(set(k)) and right - set(k) == set():
                             down = d[k]
                 else:
                     if len(right) >= len({k}):
